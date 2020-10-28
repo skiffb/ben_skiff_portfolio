@@ -13,3 +13,54 @@
     <%= yield %>
   </body>
 </html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script>
+
+function carouselNormalization() {
+    var items = $('#carouselExampleControls .carousel-item')
+    heights = [], //create empty array to store height values
+    tallest = 0; //create variable to make note of the tallest slide
+    console.log(items)
+
+  if (items.length) {
+    function normalizeHeights() {
+      items.each(function() { //add heights to array
+        heights.push($(this).height());
+      });
+      tallest = Math.max.apply(null, heights); //cache largest value
+      items.each(function() {
+        $(this).css('min-height', tallest + 'px');
+      });
+      console.log("running2")
+      console.log(tallest)
+    };
+    normalizeHeights();
+    console.log("running3")
+    console.log(tallest)
+
+    $(window).on('resize orientationchange', function() {
+      tallest = 0, heights.length = 0; //reset vars
+      items.each(function() {
+        $(this).css('min-height', '0'); //reset min-height
+      });
+      console.log("running4")
+      console.log(tallest)
+      normalizeHeights(); //run it again 
+    });
+  }
+}
+
+/**
+ * Wait until all the assets have been loaded so a maximum height 
+ * can be calculated correctly.
+ */
+window.onload = function() {
+    carouselNormalization();
+    console.log("running1")
+    console.log(tallest)
+}
+
+
+</script>

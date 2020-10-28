@@ -50,8 +50,6 @@
                     <li>CSS</li>
                     <li>Javascript</li>
                     <li>React</li>
-                    <li>Heroku</li>
-                    <li>Bootstrap</li>
                 </ul>
             </div>
         </div>
@@ -64,9 +62,7 @@
                 <ul>
                     <li>Swift</li>
                     <li>Flutter</li>
-                    <li>Ruby on Rails API</li>
-                    <li>App Store</li>
-                    <li>Material UI</li>
+                    <li>Ruby on Rails API backend</li>
                 </ul>
             </div>
         </div>
@@ -78,9 +74,7 @@
                 <ul>
                     <li>Kotlin</li>
                     <li>Flutter</li>
-                    <li>Ruby on Rails API</li>
-                    <li>Play Store</li>
-                    <li>Material UI</li>
+                    <li>Ruby on Rails API backend</li>
                 </ul>
             </div>
         </div>
@@ -89,40 +83,63 @@
         <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
             <h1>Works</h1>
         </div>
-        <div class="col-xs-12 col-lg-6 pt-3">
-            <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
-                <h3>Virtual Attention</h3>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id= "carouselInner" class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-10">
+                        <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
+                            <h3 class="card-title">Virtual Attention</h3>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
+                            <div class="card">
+                                <%= image_tag 'virtualattention.png', class: "fluid card-img", style: "max-width: 100%; height: auto"  %>
+                                <div class="card-body">
+                                    <p class="card-text">Virtual Attention is a platform where clients can create tasks and projects for freelancers, view the status, and communicate with project managers. The full workflow of the project managers and freelancers is done through the platform, in this way cients can receive live updates. This was an MVP built from scratch as a freelance project. I built the back end myself using Ruby on Rails, and worked with a teammate on the front end in React.</p>
+                                    <a href="https://www.virtualattention.com" target="_blank" class="btn btn-primary">Live site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
-                <%= image_tag 'virtualattention.png', class: "fluid", style: "max-width: 100%; height: auto"  %>
-            </div>
-            <div class="col-12 pt-3">
-                <p>Virtual Attention is a platform where clients can create tasks and projects for freelancers, view the status, and communicate with project managers. The full workflow of the project managers and freelancers is done through the platform, in this way cients can receive live updates. This was an MVP built from scratch as a freelance project. I built the back end myself using Ruby on Rails, and worked with a teammate on the front end in React.</p>
-            </div>
-            <div class="col-12 pt-2">
-                <p>Live site: <a href="https://www.virtualattention.com" target="_blank">virtualattention.com</a></p>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                    <div class="col-10">
+                        <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
+                            <h3 class="card-title">Invoice Home</h3>
+                        </div>
+                        <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
+                            <div class="card">
+                                <%= image_tag 'invoicehome.png', class: "fluid card-img", style: "max-width: 100%; height: auto"  %>
+                                <div class="card-body">
+                                    <p class="card-text">Invoice Home is a platform where freelancers and small business owners can create and send an invoice to clients and receive payments through several gateways. I was employed here for 2 years. I worked on several features of the already existing web app in Ruby on Rails, HTML, CSS, Javascript. I also built an iOS app from scratch, consuming a Rails API backend as part of a 2 person team. In addition, I built an Andorid app using Kotlin as part of a 4 person team.</p>
+                                    <a href="https://www.invoicehome.com" target="_blank" class="btn btn-primary">Live site</a>
+                                    <a href="https://apps.apple.com/us/app/invoice-maker-billing-app/id1435778692" target="_blank" class="btn btn-primary"><i class="fab fa-apple"></i> iOS app</a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.invoicehome.invoicehome&hl=en_US" target="_blank" class="btn btn-primary"><i class="fab fa-android"></i> Android app</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-xs-12 col-lg-6 pt-3">
-            <div class="col-12 d-flex justify-content-center" style="text-align:center; position:relative">
-                <h3>Invoice Home</h3>
-            </div>
-            <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
-                <%= image_tag 'invoicehome.png', class: "fluid", style: "max-width: 100%; height: auto"  %>
-            </div>
-            <div class="col-12 pt-3">
-                <p>Invoice Home is a platform where freelancers and small business owners can create and send an invoice to clients and receive payments through several gateways. I was employed here for 2 years. I worked on several features of the already existing web app in Ruby on Rails, HTML, CSS, Javascript. I also built an iOS app from scratch, consuming a Rails API backend as part of a 2 person team. In addition, I built an Andorid app using Kotlin as part of a 4 person team.</p>
-            </div>
-            <div class="col-12 pt-2">
-                <p>Live site: <a href="https://www.invoicehome.com" target="_blank">invoicehome.com</a></p>
-            </div>
-            <div class="col-12 pt-2">
-                <p><i class="fab fa-apple"></i> iOS app: <a href="https://apps.apple.com/us/app/invoice-maker-billing-app/id1435778692" target="_blank">Invoice Home iOS</a></p>
-            </div>
-            <div class="col-12 pt-2">
-                <p><i class="fab fa-android"></i> Android app: <a href="https://play.google.com/store/apps/details?id=com.invoicehome.invoicehome&hl=en_US" target="_blank">Invoice Home Android</a></p>
-            </div>
-
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" tyle="color: black">
+            <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+            <span class="sr-only"  aria-hidden="true">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+            <span class="sr-only"  aria-hidden="true">Next</span>
+        </a> 
         </div>
     </div>
     <div class="row">
@@ -133,16 +150,16 @@
             <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
                 <i class="far fa-envelope fa-2x pr-2"></i><h3>Gmail</h3>
             </div>
-            <div class="col-12">
-                <a href="mailto:benskiff30@gmail.com">benskiff30@gmail.com</a>
+            <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
+                <a href="mailto:benskiff30@gmail.com" class="btn btn-primary" target="_blank">benskiff30@gmail.com</a>
             </div>
         </div>
         <div class="col-xs-12 col-md-4">
             <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
                 <i class="fab fa-whatsapp fa-2x pr-2"></i><h3>Whatsapp</h3>
             </div>
-            <div class="col-12">
-                <a href="https://wa.me/14126203531" target="_blank">+1-412-620-3531</a>
+            <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
+                <a href="https://wa.me/14126203531" class="btn btn-primary" target="_blank">+1-412-620-3531</a>
 
             </div>
         </div>
@@ -150,8 +167,8 @@
             <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
                 <i class="fab fa-linkedin fa-2x pr-2"></i><h3>LinkedIn</h3>
             </div>
-            <div class="col-12">
-                <a href="https://www.linkedin.com/in/benjamin-skiff-a9569b155/" target="_blank">https://www.linkedin.com/in/benjamin-skiff-a9569b155/</a>
+            <div class="col-12 d-flex justify-content-center pt-2" style="text-align:center; position:relative">
+                <a href="https://www.linkedin.com/in/benjamin-skiff-a9569b155/" class="btn btn-primary" target="_blank">My LinkedIn</a>
             </div>
         </div>
     </div>
