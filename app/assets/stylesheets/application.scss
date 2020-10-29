@@ -21,3 +21,11 @@ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
 @import '@fortawesome/fontawesome-free/scss/regular';
 @import '@fortawesome/fontawesome-free/scss/brands';
 @import '@fortawesome/fontawesome-free/scss/v4-shims';
+
+html,body{
+    height: 100%
+}
+.app-wrapper{
+    min-height: 100%;
+    position: relative;
+}
