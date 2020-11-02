@@ -9,6 +9,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="initial-scale=1">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 
   </head>
@@ -17,18 +19,12 @@
     <div class="app-wrapper">
       <%= yield %>
     </div>
-  </body>
-</html>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-
-<script>
+    <script>
 
 function carouselNormalization() {
     var items = $('#carouselExampleControls .carousel-item')
     heights = [], //create empty array to store height values
     tallest = 0; //create variable to make note of the tallest slide
-    console.log(items)
 
   if (items.length) {
     function normalizeHeights() {
@@ -39,34 +35,24 @@ function carouselNormalization() {
       items.each(function() {
         $(this).css('min-height', tallest + 'px');
       });
-      console.log("running2")
-      console.log(tallest)
     };
     normalizeHeights();
-    console.log("running3")
-    console.log(tallest)
 
     $(window).on('resize orientationchange', function() {
       tallest = 0, heights.length = 0; //reset vars
       items.each(function() {
         $(this).css('min-height', '0'); //reset min-height
       });
-      console.log("running4")
-      console.log(tallest)
       normalizeHeights(); //run it again 
     });
   }
 }
 
-/**
- * Wait until all the assets have been loaded so a maximum height 
- * can be calculated correctly.
- */
 window.onload = function() {
     carouselNormalization();
-    console.log("running1")
-    console.log(tallest)
 }
 
 
 </script>
+  </body>
+</html>
